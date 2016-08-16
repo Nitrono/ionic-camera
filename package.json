@@ -1,0 +1,20 @@
+{
+  "name": "ionic-camera",
+  "version": "1",
+  "cordova": {
+    "id": "ionic-camera",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "description": "Ionic Camera Module",
+  "repository": "https://github.com/Nitrono/ionic-camera",
+  "issue": "https://github.com/Nitrono/ionic-camera/issues",
+  "keywords": [
+    "ionic",
+    "cordova",
+    "cordova-ios",
+  ],
+  "author": "Dmitry Klepitsky",
+  "license": "Apache 2.0"
+}

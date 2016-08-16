@@ -1,2 +1,1 @@
-# ionic-camera
-ionic camera module
+# ionic-audio-processor

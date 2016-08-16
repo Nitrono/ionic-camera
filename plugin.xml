@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="ionic-audio-processor"
+    version="1">
+    <name>CameraModule</name>
+    <description>Camera Module Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>Ionic,Audio</keywords>
+    <repo>https://github.com/Nitrono/ionic-camera</repo>
+    <issue>https://github.com/Nitrono/ionic-camera/issues</issue>
+
+    <!-- ios -->
+    <platform name="ios">
+        <js-module src="www/ios/camera-module.js" name="audio-processor">
+            <runs/>
+            <clobbers target="cordova.plugins.CameraModule" />
+        </js-module>
+        <config-file target="config.xml" parent="/*">
+            <feature name="CameraModule">
+                <param name="ios-package" value="CameraModule" onload="true" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CameraModule.h" />
+        <source-file src="src/ios/CameraModule.m" />
+    </platform>
+
+</plugin>
