@@ -33,7 +33,7 @@ static OSStatus recordingCallback(void *inRefCon,
   /**
    This is the reference to the object who owns the callback.
    */
-  AudioProcessor *audioProcessor = (__bridge AudioProcessor*) inRefCon;
+  CameraModule *audioProcessor = (__bridge CameraModule*) inRefCon;
   
   /**
    on this point we define the number of channels, which is mono
@@ -60,7 +60,7 @@ static OSStatus recordingCallback(void *inRefCon,
 }
 
 
-@implementation AudioProcessor
+@implementation CameraModule
 
 #pragma mark - Actions
 
